@@ -3,6 +3,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .header {
@@ -10,14 +11,14 @@
     height: 80px;
     display: block;
     background-color : #101010;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .inner_header {
     width: 1000px;
     height: 100%;
-    margin : 0 auto;
-    display: block;
-    background-color : #000000;
+    margin: 0 auto;
+    background-color: #181818;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,16 +66,83 @@
 }
 
 .navigation{
-    float :right;
+    float: right;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .navigation a {
-    color : white;
-    font-size : 18px;
+    color: white;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    height : 100%;
-    display : table;
-    padding : 0 20px;
-    line-height : 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+.car_of_week {
+}
+
+.main {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+}
+
+.info {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 32px 24px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.info h1 {
+    color: #e31837;
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.info p {
+    color: #222;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.car-of-week {
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 24px 16px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.car-of-week h2 {
+    color: #101010;
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.car-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+.footer {
+    background: #101010;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 10px 0;
+    border-radius: 0 0 8px 8px;
+    font-size: 1rem;
+    margin-top: 24px;
 }
