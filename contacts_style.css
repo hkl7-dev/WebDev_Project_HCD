@@ -1,8 +1,19 @@
 
+.div_layout {
+    border : 2px solid black;
+    margin : auto;
+    text-align : center;
+    padding : 10px;
+    width : 80%;
+    background-color : #f4f4f4;
+    border-radius : 10px;
+}
 
-img {
+.Cartoon_Car {
     float : right;
-} 
+    margin : auto;
+
+}
 
 .Red_Header {
     color : #e31837;
@@ -13,5 +24,15 @@ img {
     color : red;
 }
 
+
+.Contact_form {
+    margin : auto;
+    text-align : left;
+    padding : 10px;
+    width : 50%;
+    border: #e31837 2px solid;
+    border-radius : 10px;
+    background-color : #fff0f0;
+}
 
 
