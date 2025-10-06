@@ -134,6 +134,54 @@
     box-shadow: 0 2px 12px rgba(0,0,0,0.10);
 }
 
+.explore h2 {
+    color :#101010;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.car-brands {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 24px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.brand-logo {
+    width: 160px;
+    height: 80px;
+    object-fit: contain;
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.brand-logo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 900px) {
+    .car-brands {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .car-brands {
+        grid-template-columns: 1fr;
+    }
+    .brand-logo {
+        width: 220px; 
+        height: auto;
+    }
+}
+
 .footer {
     background: #101010;
     color: #fff;
