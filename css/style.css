@@ -153,8 +153,8 @@
 }
 
 .brand-logo {
-    width: 160px;
-    height: 80px;
+    width: 240px;
+    height: 160px;
     object-fit: contain;
     background: #ffffff;
     padding: 8px;
@@ -165,7 +165,7 @@
 
 .brand-logo:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 18px rgb(0, 0, 0);
 }
 
 @media (max-width: 900px) {
