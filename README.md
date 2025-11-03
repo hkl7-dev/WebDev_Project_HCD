@@ -40,7 +40,7 @@ This project is a collaborative effort; all team members contribute to design, c
 
 ## 🚀 Deployment
 The project is live and accessible via **GitHub Pages**:  
-👉 [View Live Site]([https://your-username.github.io/WebDev_Project_HCD/](https://hkl7-dev.github.io/WebDev_Project_HCD/))  
+👉 [View Live Site](https://hkl7-dev.github.io/WebDev_Project_HCD/)
 
 ---
 
