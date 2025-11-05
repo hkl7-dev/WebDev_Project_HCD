@@ -1,0 +1,53 @@
+/* Code by dongsheng (a00028976)*/
+/* Contact page of Wheels of Fire (WebDev Module CA)*/
+.about-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    line-height: 1.6;
+}
+
+.about-page h1 {
+    color: #e31837;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    text-align: center;
+    border-bottom: 2px solid #101010;
+    padding-bottom: 16px;
+}
+
+.about-page p {
+    color: #222;
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .about-page {
+        margin: 20px;
+        padding: 24px 16px;
+    }
+    
+    .about-page h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-page {
+        margin: 15px;
+        padding: 20px 12px;
+    }
+    
+    .about-page h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-page p {
+        font-size: 1.05rem;
+    }
+}
