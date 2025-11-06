@@ -1,6 +1,37 @@
 /* Code by Cal Noonan (a0002859)*/
 /* Events CSS page of Wheels of Fire (WebDev Module CA)*/
 
-.Event_Title{
+.Event_Title h1{
+    color : red;
+    text-align: center;
+    font-style: italic;
+}
+
+.Event_Title h2 {
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    margin: auto;
+}
+
+.Page_Layout h3{
+    color: black;
+    border : 2px solid black;
+    margin : auto;
+    text-align : center;
+    padding : 10px;
+    width : 80%;
+    background-color : #f4f4f4;
+    border-radius : 10px;
+    font-weight: 100;
+
+}
+
+.Page_Layout h2{
+    color: red;
+    text-align: center;
+    margin: auto;
     
+
 }
