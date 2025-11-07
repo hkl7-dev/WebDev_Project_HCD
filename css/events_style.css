@@ -2,7 +2,7 @@
 /* Events CSS page of Wheels of Fire (WebDev Module CA)*/
 
 .Event_Title h1{
-    color : red;
+    color :rgb(233, 6, 6);
     text-align: center;
     font-style: italic;
 }
@@ -10,28 +10,30 @@
 .Event_Title h2 {
     color: black;
     text-align: center;
-    font-style: italic;
     font-weight: 300;
     margin: auto;
 }
 
 .Page_Layout h3{
     color: black;
-    border : 2px solid black;
+    border : 2px solid rgb(233, 6, 6);
     margin : auto;
     text-align : center;
     padding : 10px;
     width : 80%;
-    background-color : #f4f4f4;
+    background-color : #fff0f0;
     border-radius : 10px;
     font-weight: 100;
 
 }
 
 .Page_Layout h2{
-    color: red;
+    color: rgb(233, 6, 6);
     text-align: center;
     margin: auto;
-    
 
 }
+
+
+
+    
