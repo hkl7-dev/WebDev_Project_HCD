@@ -15,21 +15,21 @@
 }
 
 .Page_Layout h3{
-    color: black;
-    border : 2px solid rgb(233, 6, 6);
-    margin : auto;
-    text-align : center;
-    padding : 10px;
-    width : 80%;
-    background-color : #fff0f0;
-    border-radius : 10px;
-    font-weight: 100;
+    font-weight: 300;
+    color:black;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 24px 16px;
+    margin-bottom: 32px;
+    text-align: center;
 
 }
 
 .Page_Layout h2{
-    color: rgb(233, 6, 6);
     text-align: center;
-    margin: auto;
+    margin-bottom: 16px;
+    color: red ;
 
 }
+
