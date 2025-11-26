@@ -1,45 +1,247 @@
 /* Code by Cal Noonan (a0002859)*/
-/* Contact page of Wheels of Fire (WebDev Module CA)*/
+/* Contact page of Wheels of Fire (WebDev Module CA) - IMPROVED */
+
+:root {
+    --primary-color: #e31837;
+    --text-dark: #222;
+    --light-bg: #f4f4f4;
+}
+
 .div_layout {
-    border : 2px solid black;
-    margin : auto;
-    text-align : center;
-    padding : 10px;
-    width : 80%;
-    background-color : #f4f4f4;
-    border-radius : 10px;
+    border: 3px solid var(--primary-color);
+    margin: 20px auto;
+    text-align: center;
+    padding: clamp(16px, 4vw, 32px);
+    width: clamp(90%, 90vw, 95%);
+    max-width: 900px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(227, 24, 55, 0.15);
 }
 
 .Cartoon_Car {
-    float : right;
-    margin : auto;
-
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .Red_Header {
-    color : #e31837;
-    text-align : center;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.Red_Header h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 800;
+    margin: 0;
+}
+
+.small_Header {
+    text-align: left;
 }
 
 .small_Header h2 {
-    color : red;
+    color: var(--primary-color);
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: 700;
+    margin: 20px 0 12px 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 8px;
 }
 
+.small_Header h3 {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.small_Header a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.small_Header a:hover {
+    color: var(--text-dark);
+    text-decoration: underline;
+}
 
 .Contact_form {
-    margin : auto;
-    text-align : left;
-    padding : 10px;
-    width : 50%;
-    border: #e31837 2px solid;
-    border-radius : 10px;
-    background-color : #fff0f0;
-
+    margin: 30px auto;
+    padding: clamp(16px, 4vw, 28px);
+    width: clamp(85%, 85vw, 95%);
+    max-width: 600px;
+    border: 3px solid var(--primary-color);
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
-.small_Header h3{
-    font-size: large;
-    font-weight: 200;
+.Contact_form h2 {
+    color: var(--primary-color);
+    font-size: clamp(1.3rem, 4vw, 1.7rem);
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 12px;
+}
 
+.Contact_form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Contact_form table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.Contact_form table tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.Contact_form table tr:last-child {
+    border-bottom: none;
+}
+
+.Contact_form table td:first-child {
+    font-weight: 600;
+    color: var(--text-dark);
+    width: 40%;
+    white-space: nowrap;
+}
+
+.Contact_form input[type="text"],
+.Contact_form input[type="email"],
+.Contact_form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.Contact_form input[type="text"]:focus,
+.Contact_form input[type="email"]:focus,
+.Contact_form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(227, 24, 55, 0.2);
+}
+
+.Contact_form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    margin-top: 12px;
+}
+
+.Contact_form input[type="submit"]:hover {
+    background-color: #c91430;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(227, 24, 55, 0.3);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 768px) {
+    .div_layout {
+        padding: 20px 16px;
+        width: 95%;
+    }
+
+    .Cartoon_Car {
+        float: none;
+        margin: 20px 0;
+        max-width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Contact_form {
+        width: 95%;
+        padding: 20px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .div_layout {
+        border: 2px solid var(--primary-color);
+        padding: 16px 12px;
+        width: 100%;
+        margin: 16px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .Red_Header h1 {
+        font-size: 1.6rem;
+        margin-bottom: 16px;
+    }
+
+    .small_Header h2 {
+        font-size: 1.1rem;
+        margin: 16px 0 10px 0;
+    }
+
+    .small_Header h3 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .Cartoon_Car {
+        max-width: 250px;
+    }
+
+    .Contact_form {
+        width: 100%;
+        padding: 16px 12px;
+        margin: 20px 0;
+    }
+
+    .Contact_form h2 {
+        font-size: 1.4rem;
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+    }
+
+    .Contact_form table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .Contact_form table tr {
+        display: block;
+        border-bottom: 2px solid #e0e0e0;
+        margin-bottom: 12px;
+    }
+
+    .Contact_form table td:first-child {
+        font-weight: 700;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    .Contact_form input[type="text"],
+    .Contact_form input[type="email"],
+    .Contact_form textarea {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
 }
 

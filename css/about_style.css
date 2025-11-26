@@ -1,53 +1,73 @@
 /* Code by dongsheng (a00028976)*/
-/* Contact page of Wheels of Fire (WebDev Module CA)*/
+/* Contact page of Wheels of Fire (WebDev Module CA) - IMPROVED */
 .about-page {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 40px auto;
-    padding: 32px 24px;
+    padding: clamp(20px, 5vw, 40px);
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    line-height: 1.6;
+    border-radius: 12px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.1);
+    line-height: 1.8;
 }
 
 .about-page h1 {
     color: #e31837;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 6vw, 2.8rem);
     margin-bottom: 24px;
     text-align: center;
-    border-bottom: 2px solid #101010;
+    border-bottom: 3px solid #e31837;
     padding-bottom: 16px;
+    font-weight: 800;
 }
 
 .about-page p {
     color: #222;
-    font-size: 1.15rem;
+    font-size: clamp(1rem, 2vw, 1.15rem);
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 @media (max-width: 900px) {
     .about-page {
         margin: 20px;
-        padding: 24px 16px;
+        padding: clamp(16px, 4vw, 28px);
     }
     
     .about-page h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 }
 
 @media (max-width: 600px) {
     .about-page {
-        margin: 15px;
-        padding: 20px 12px;
+        margin: 16px;
+        padding: 20px 16px;
+        border-radius: 10px;
     }
     
     .about-page h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
     }
     
     .about-page p {
         font-size: 1.05rem;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-page {
+        margin: 12px;
+        padding: 16px 12px;
+    }
+    
+    .about-page h1 {
+        font-size: 1.5rem;
+    }
+    
+    .about-page p {
+        font-size: 1rem;
     }
 }

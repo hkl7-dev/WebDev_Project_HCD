@@ -1,35 +1,126 @@
 /* Code by Cal Noonan (a0002859)*/
-/* Events CSS page of Wheels of Fire (WebDev Module CA)*/
+/* Events CSS page of Wheels of Fire (WebDev Module CA) - IMPROVED */
 
-.Event_Title h1{
-    color :rgb(233, 6, 6);
+:root {
+    --primary-color: #e31837;
+    --text-dark: #222;
+    --light-bg: #f7f7f7;
+}
+
+.Event_Title {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.Event_Title h1 {
+    color: var(--primary-color);
     text-align: center;
     font-style: italic;
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    font-weight: 800;
+    margin-bottom: 12px;
 }
 
 .Event_Title h2 {
-    color: black;
+    color: var(--text-dark);
     text-align: center;
-    font-weight: 300;
-    margin: auto;
+    font-weight: 500;
+    margin: 0;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    line-height: 1.6;
 }
 
-.Page_Layout h3{
-    font-weight: 300;
-    color:black;
-    background: #f7f7f7;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    padding: 24px 16px;
-    margin-bottom: 32px;
-    text-align: center;
-
+.Page_Layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.Page_Layout h2{
+.Page_Layout h2 {
     text-align: center;
-    margin-bottom: 16px;
-    color: red ;
+    margin-bottom: 24px;
+    color: var(--primary-color);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 12px;
+}
 
+.Page_Layout h3 {
+    font-weight: 500;
+    color: var(--text-dark);
+    background: var(--light-bg);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    padding: clamp(16px, 4vw, 28px);
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    line-height: 1.8;
+    border-left: 5px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.Page_Layout h3:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(227, 24, 55, 0.2);
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 768px) {
+    .Event_Title {
+        margin-bottom: 32px;
+        padding: 0 16px;
+    }
+
+    .Event_Title h1 {
+        font-size: 2.2rem;
+    }
+
+    .Page_Layout {
+        padding: 0 16px;
+    }
+
+    .Page_Layout h2 {
+        font-size: 1.7rem;
+    }
+
+    .Page_Layout h3 {
+        padding: 20px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Event_Title {
+        margin-bottom: 24px;
+        padding: 0 16px;
+    }
+
+    .Event_Title h1 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+
+    .Event_Title h2 {
+        font-size: 1rem;
+    }
+
+    .Page_Layout {
+        padding: 0 12px;
+    }
+
+    .Page_Layout h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .Page_Layout h3 {
+        padding: 16px 12px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
 }
 
