@@ -1,5 +1,5 @@
 
-document.getElementById('contactForm').addEventListener('submit', function(e) 
+document.getElementById('contactForm').addEventListener('submit', function(e)
 {
   e.preventDefault(); // Stop actual form submission for now
   const popup = document.getElementById('popup');

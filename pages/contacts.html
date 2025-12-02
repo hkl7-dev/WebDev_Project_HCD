@@ -60,72 +60,42 @@
         <!--Contact form input-->
       <section class="Contact_form">
         <h2> Contact Form</h2>
-          <form>
+          <form id="contactForm" action="#" method="post">
             <table>
-            <tr>
-              <td> 
-                First name :
-              </td>
+              <tr>
+                <td>First name:</td>
+                <td><input type="text" name="First name" required></td>
+              </tr>
 
-              <td> 
-                <input type="text" name="First name" required>
-              </td>
-            </tr>
+              <tr>
+                <td> Last name :</td>
+                <td><input type="text" name="Last name" required></td>
+              </tr>
 
-            <tr>
-              <td> Last name :
+              <tr>
+                  <td> Email :</td>
+                  <td><input type="email" name="Email" required></td>
+              </tr>
 
-              </td>
-              <td>
-                <input type="text" name="Last name" required> 
-              </td>
-            </tr>
+              <tr>
+                <td> Phone Number :</td>
+                  <td><input type="tel" name="Phone Number" required></td>
+              </tr>
 
-            <tr>
-                <td> Email :
-  
-                </td>
-                <td>
-                  <input type="email" name="Email" required>
-                
-                </td>
-
-            </tr>
-
-            <tr>
-              <td> Phone Number :
-
-              </td>
-                <td>
-                  <input type="tel" name="Phone Number" required>
-                
-                </td>
-
-            <tr>
-              <td> Message :
-
-              </td>
-                <td>
-                  <textarea name="Message" rows="5" cols="30" required></textarea>
-                
-                </td>
-
+              <tr>
+                  <td> Message :</td>
+                  <td><textarea name="Message" rows="5" cols="30" required></textarea></td>
+              </tr>
 
             </table>
 
-          <input type="submit" value="Submit">
+            <input type="submit" value="Submit">
 
-
-        </form>
-
-        <!-- Popup -->
-        <div id="popup" class="popup">
-        <p>✅ Thank you! Your message has been sent.</p>
-        </div>
+          </form>
 
       </section>
 
-        <script src="../javascript/contactJava.js"></script>
+      <script src="../javascript/contactJava.js"></script>
 
     </body>
         
