@@ -58,70 +58,74 @@
 
 
         <!--Contact form input-->
-        <section class="Contact_form">
+      <section class="Contact_form">
         <h2> Contact Form</h2>
-        <form>
-          <table>
+          <form>
+            <table>
             <tr>
-              <td> First name :
-
+              <td> 
+                First name :
               </td>
 
               <td> 
                 <input type="text" name="First name" required>
-               </td>
-
-           </tr>
-
-           <tr>
-            <td> Last name :
-
               </td>
-             <td>
-                <input type="text" name="Last name" required>
-               
-             </td>
-           </tr>
+            </tr>
 
             <tr>
-              <td> Email :
+              <td> Last name :
+
+              </td>
+              <td>
+                <input type="text" name="Last name" required> 
+              </td>
+            </tr>
+
+            <tr>
+                <td> Email :
   
                 </td>
-              <td>
+                <td>
                   <input type="email" name="Email" required>
                 
-              </td>
+                </td>
 
             </tr>
 
             <tr>
               <td> Phone Number :
 
-                </td>
-              <td>
+              </td>
+                <td>
                   <input type="tel" name="Phone Number" required>
                 
-              </td>
+                </td>
 
             <tr>
               <td> Message :
 
-                </td>
-              <td>
+              </td>
+                <td>
                   <textarea name="Message" rows="5" cols="30" required></textarea>
                 
-              </td>
+                </td>
 
 
-          </table>
+            </table>
 
           <input type="submit" value="Submit">
 
 
         </form>
 
-        </section>
-          
+        <!-- Popup -->
+        <div id="popup" class="popup">
+        <p>✅ Thank you! Your message has been sent.</p>
+        </div>
+
+      </section>
+
+        <script src="../javascript/contactJava.js"></script>
 
     </body>
         
