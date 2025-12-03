@@ -60,7 +60,7 @@
         <!--Contact form input-->
       <section class="Contact_form">
         <h2> Contact Form</h2>
-          <form id="contactForm" action="#" method="post">
+          <form action="https://formspree.io/f/xldqnaor" method="post">
             <table>
               <tr>
                 <td>First name:</td>
@@ -83,6 +83,17 @@
               </tr>
 
               <tr>
+                  <td> reason for contact :</td>
+                  <td>
+                    <select name="reason for contact" required>
+                      <option value="Customer Support">Customer Support</option>
+                      <option value="General Questions">General Questions</option>
+                      <option value="Feedback">Feedback</option>
+                      <option value="Other">Other</option>
+                    </select>
+              </tr>
+
+              <tr>
                   <td> Message :</td>
                   <td><textarea name="Message" rows="5" cols="30" required></textarea></td>
               </tr>
@@ -95,8 +106,10 @@
 
       </section>
 
-      <script src="../javascript/contactJava.js"></script>
+      <script> src="javascript\contactJava.js "</script>
 
     </body>
+
+    
         
 </html>
